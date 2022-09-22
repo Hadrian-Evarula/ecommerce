@@ -1,0 +1,250 @@
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+
+header {
+    position: absolute;
+    font-family:iran_sans_light;
+    height: 21mm;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+HTML{
+    font-size: 75%;
+}
+
+header .logo {
+	position: relative;
+	max-width: 80px;
+}
+
+header ul {
+	position: relative;
+	display: flex;
+}
+
+header ul li {
+	list-style: none;
+}
+
+header ul li a {
+	display: inline-block;
+	color: white;
+	font-weight: 400;
+	margin-left: 40px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+header ul li a:hover {
+    color: #ed0223;
+}
+
+.sci {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.sci li {
+	list-style: none;
+}
+
+.sci li a {
+	display: inline-block;
+	filter: invert(1);
+	margin: 5px 0;
+	transform: scale(0.6);
+}
+
+@media (max-width: 991px) {
+	section {
+		padding: 40px;
+		padding-bottom: 140px;
+
+	}
+
+	header {
+		padding: 20px 40px;
+	}
+
+	header .logo {
+		position: relative;
+		max-width: 60px;
+	}
+
+	header ul { 
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		z-index: 1;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition: 0.2s;
+		visibility: hidden;
+		opacity: 0;
+	}
+	header ul.active {
+		visibility: visible;
+		opacity: 1;  
+	}
+
+	header ul li a {
+		display: inline-block;
+		color: #111;
+		font-weight: 400;
+		margin-left: 0;
+		text-decoration: none;
+		font-size: 2em;
+		margin: 10px 0;
+	}
+
+	header ul li a:hover {
+		color: #ed0223;
+	}
+
+	.toggleMenu {
+		position: relative;
+		width: 40px;
+		height: 40px;
+		background: url(./Img/menu.png);
+		background-size: 30px;
+		background-repeat: no-repeat;
+		z-index: 2;
+        cursor: pointer;
+        color: #000;
+	}
+
+	.toggleMenu.active {
+		background: url(./Img/close.png);
+		background-position: center;
+		background-size: 25px;
+		background-repeat: no-repeat;
+        filter: invert(1);
+        color: #000;
+	}
+
+
+	.sci {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: 50px;
+		background: rgba(0, 0, 0, 0.2);
+		transform: translateY(-50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+body{
+    background-image: url(./Contact_Us/background.jfif) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+
+
+form {
+    max-width: 550px;
+    width: 90%;
+	background-color: rgba(30, 39, 39, 0.3);
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+h1{
+    margin: 0;
+    text-align: center;
+}
+label {
+    display: block;
+    margin: 20px 0;
+}
+
+#name {
+	background-color: transparent;
+}
+#email{
+	background-color: transparent;
+}
+#message{
+	background-color: transparent;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-bottom: 1px solid rgb(#636e72)
+}
+
+textarea::-webkit-scrollbar {
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgb(255,0, 106)
+}
+.center {
+    text-align: center;
+}
+input[type="submit"] {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: linear-gradient(to right, rgb(255,0, 106), rgb(255,67, 61));
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover{
+	color: black;
+}
+.error {
+    color: red;
+}
+
+.error-border {
+    border-bottom: 1px solid red;
+}
+#sucess {
+    color:#28A745;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="login and Register.css">
+  <link rel="icon" href="./Img/SHOEPPE-removebg-preview.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>SHOEPPE</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="./Img/SHOEPPE-removebg-preview.png" class="logo"></a>
+    <div class="toggleMenu" onclick="menuToggle();"></div>
+    <ul class="navigation">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="shopall.html">SHOP ALL</a></li>
+      <li><a href="contact us.html">CONTACT US</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="Order.html">ORDER US</a></li>
+      <li><a href="#">OUR PRODUCT</a></li>
+      <li><a href="Reviews.html">REVIEWS</a></li>
+      <li><a href="login and Register.html">LOGIN</a></li>
+    </ul>
+  </header>
+  <br><br><br><br><br>
+  <div class="container">
+    <div class="form">
+      <div class="btn">
+        <button class="SignupBtn">SIGN UP</button>
+        <button class="LoginBtn">LOGIN</button>
+      </div>
+      <form action="login.php" method="post" class="signUp">
+        <div class="formGroup">
+          <input type="text" name="firstName" id="user name" placeholder="User Name" autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="text" name="email" id="email" placeholder="Email ID" autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" name="password" id="password" placeholder="Password" autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password"
+            autocomplete="off">
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <span class="text">I agree with term & Conditions.</span>
+          <div class="formGroup">
+            <button class="btn2">REGISTER</button>
+          </div>
+        </div>
+      </form>
+
+
+      <form action="" class="Login">
+        <div class="formGroup">
+          <input type="text" name="email" id="email" placeholder="Email ID" autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" name="password" id="password" placeholder="Password" autocomplete="off">
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <span class="text">Keep me Signed in on the device.</span>
+          <div class="formGroup">
+            <button class="btn2">LOGIN</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="login and register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+html{
+	font-size: 80%;
+}
+
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+
+header .logo {
+	position: relative;
+	max-width: 80px;
+}
+
+header ul {
+	position: relative;
+	display: flex;
+}
+
+header ul li {
+	list-style: none;
+}
+
+header ul li a {
+	display: inline-block;
+	color: white;
+	font-weight: 400;
+	margin-left: 40px;
+	text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #ed0223;
+}
+
+@media (max-width: 991px) {
+	section {
+		padding: 40px;
+		padding-bottom: 140px;
+
+	}
+
+	header {
+		padding: 20px 40px;
+	}
+
+	header .logo {
+		position: relative;
+		max-width: 60px;
+	}
+
+	header ul { 
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		z-index: 1;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition: 0.2s;
+		visibility: hidden;
+		opacity: 0;
+	}
+	header ul.active {
+		visibility: visible;
+		opacity: 1;  
+	}
+
+	header ul li a {
+		display: inline-block;
+		color: #111;
+		font-weight: 400;
+		margin-left: 0;
+		text-decoration: none;
+		font-size: 2em;
+		margin: 10px 0;
+	}
+
+	header ul li a:hover {
+		color: #ed0223;
+	}
+
+	.toggleMenu {
+		position: relative;
+		width: 40px;
+		height: 40px;
+		background: url(./Img/menu.png);
+		background-size: 30px;
+		background-repeat: no-repeat;
+		z-index: 2;
+        cursor: pointer;
+        color: #000;
+	}
+
+	.toggleMenu.active {
+		background: url(./Img/close.png);
+		background-position: center;
+		background-size: 25px;
+		background-repeat: no-repeat;
+        filter: invert(1);
+        color: #000;
+	}
+}
+.heading{
+	text-align: center;
+	margin-top: 10rem;
+}
+.heading h1{
+	font-size: 2.5rem;
+	font-weight: 500;
+	text-transform: capitalize;
+	color: var(--text-color);
+}
+.heading span{
+	padding: 0.2rem 1.2rem;
+	background: rgb(214, 26, 26);
+	color: white;
+	font-weight: 600;
+	display: inline-block;
+	text-transform:uppercase;
+	clip-path: polygon(100% 0,93% 50%,86% 99%, 0% 100%,7% 47%,13% 0%);
+}
+.reviews-container{
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,auto));
+    gap:1rem;
+	margin-top: 1rem;
+	padding: 35px;
+}
+.reviews-container .box {
+	padding: 2px;
+	border-radius: 0.5rem;
+	text-align: center;
+	border-style: outset;
+	border-color: #a10404;
+	border-width: 3px;
+}
+.reviews-container .box img{
+	width: 190px;
+	height: 190px;
+	border-radius: 50%;
+	margin-top: 10px;
+}
+.reviews-container .box .stars{
+	color: rgb(255, 208, 0);
+}
+.reviews-container .box p{
+	color: rgb(73, 2, 2);
+	font-size: 13px;
+	font-weight: 120;
+}
+.reviews-container .box .stars h3{
+	color: rgb(216, 176, 0);
+}
+.reviews-container .box h3{
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: rgb(3, 3, 44)
+}
+
+
+  
+.heading {
+	font-size: 25px;
+	margin-right: 25px;
+  }
+  
+  .fa {
+	font-size: 25px;
+  }
+  
+  .checked {
+	color: orange;
+  }
+  
+  /* Three column layout */
+  .side {
+	float: left;
+	width: 15%;
+	margin-top:10px;
+  }
+  
+  .middle {
+	margin-top:10px;
+	float: left;
+	width: 70%;
+  }
+  
+  /* Place text to the right */
+  .right {
+	text-align: right;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* The bar container */
+  .bar-container {
+	width: 100%;
+	background-color: #f1f1f1;
+	text-align: center;
+	color: white;
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 80%; height: 18px; background-color: #04AA6D;}
+  .bar-4 {width: 47%; height: 18px; background-color: #2196F3;}
+  .bar-3 {width: 32%; height: 18px; background-color: #00bcd4;}
+  .bar-2 {width: 13%; height: 18px; background-color: #ff9800;}
+  .bar-1 {width: 17%; height: 18px; background-color: #f44336;}
+  
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+  @media (max-width: 400px) {
+	.side, .middle {
+	  width: 100%;
+	}
+	.right {
+	  display: none;
+	}
+  }
+  .review2{
+	  padding: 30px;
+  }
